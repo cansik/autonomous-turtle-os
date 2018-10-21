@@ -21,21 +21,21 @@ void loop() {
     Serial.print("moving...");
     rightMotor.move();
     leftMotor.move();
-    delay(1000);
+    delay(10000);
     Serial.println("stop");
 
     rightMotor.stop();
     leftMotor.stop();
     delay(500);
-    
+
     Serial.print("moving backwards...");
     rightMotor.move(false);
     leftMotor.move(false);
-    delay(1000);
+    delay(10000);
     Serial.println("stop");
 
     Serial.println("waiting...");
     rightMotor.stop();
     leftMotor.stop();
-    delay(1000);
+    delay(5000);
 }

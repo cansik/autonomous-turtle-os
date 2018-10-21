@@ -21,8 +21,8 @@ void DCMotor::move(bool forward) {
     digitalWrite(pwmPin, static_cast<uint8_t>(isInverted == !forward ? HIGH : LOW));
 
     // set speed
-    //digitalWrite(dPin, HIGH);
-    analogWrite(dPin, 2500);
+    digitalWrite(dPin, HIGH);
+    //analogWrite(dPin, 500);
 }
 
 void DCMotor::stop() {
